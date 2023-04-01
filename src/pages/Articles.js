@@ -22,10 +22,11 @@ const Articles = () => {
       setNews(data.articles);
       if(data.articles.length === 0){
         setErrorMsg("검색된 결과 값이 없습니다.")
-        console.log(errorMsg)
+       
       }
     }else{
       setErrorMsg(data.message)
+      console.log(data.message)
       throw new Error(data.message);
     }
    
@@ -33,15 +34,15 @@ const Articles = () => {
       
 
     } catch (e) {
-      setErrorMsg(e)
+     
       
-      console.log(e);
+      console.log(e.Error);
     }
   }
 
   async function getLatestNews() {
     url = new URL(
-      `https://newsapi.org/v2/top-headlines?country=us&pageSize=${totalResult}&apiKey=e9e6b1a12aa54dd5bff096fc2f99ee54`
+      `https://newsapi.org/v2/top-headlines?countr=us&pageSize=${totalResult}&apiKey=e9e6b1a12aa54dd5bff096fc2f99ee54`
     );
     console.log(news);
     await getNews();
