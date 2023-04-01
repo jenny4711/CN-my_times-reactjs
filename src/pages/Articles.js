@@ -43,9 +43,17 @@ const Articles = () => {
   async function getLatestNews() {
     url = new URL(
       `https://newsapi.org/v2/top-headlines?countr=us&pageSize=${totalResult}&apiKey=e9e6b1a12aa54dd5bff096fc2f99ee54`
+
     );
-    console.log(news);
     await getNews();
+    if(!await getNews()){
+      url = new URL(
+        `https://newsapi.org/v2/everything?q=keyword&apiKey=4c4a76bd28a24c998f04964da74b0b79`
+      );
+      await getNews();
+    }
+   
+   
   }
 
   async function getNewsByTopic(evt) {
