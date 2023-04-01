@@ -17,7 +17,7 @@ const Articles = () => {
       let res = await fetch(url);
       let data = await res.json();
       setTotalResult(res.totalResults)
-      console.log(data.articles.length)
+    
      if(res.status ==200){
       setNews(data.articles);
       if(data.articles.length === 0){
