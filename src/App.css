@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.App {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+.App-div1{
+  display:flex;
+
+}
+.App-h1{
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  font-weight: bolder;
+  font-size:100px;
+  margin:2rem;
+  padding:1rem;
+  
+  font-style:italic;
+}
+
+
+
+.Form-form{
+display:flex;
+justify-content:flex-end
+}
+
+
+.img{
+  width:25rem;
+  height:15rem
+}
+.Article-body{
+  display:flex;
+  justify-content: center;
+  padding:1rem;
+  width:85rem;
+  border-bottom: 2px solid black;
+ 
+}
+
+.Article-col1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.menus{
+  border-bottom:1px solid lightgray;
+}
+
+.menus button{
+  border:none;
+  background-color: white;
+  margin:5px;
+  
+}
+.menus button:hover{
+  background-color: black;
+  color:white;
+  border-radius: 10%;
+}
+
+.Article-col1{
+  padding:1rem;
+}
+h2 a{
+  color:black;
+  text-decoration-line: none;
+}
+.Form-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:768px){
+  .Form-body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   
+    color:white;
+    width:768;
+    margin-top:2rem;
+  }
+  .menus{
+    display: flex;
+    flex-direction:column;
+   
+
+    
+  }
+}
+
+.pagination{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:1rem;
+  
+}
+.page-item a{
+  border:none;
+  color:black;
+}
+
+.page-item a:hover{
+  background-color: black;
+  color:white;
+}
+
+.active1{
+  background-color: pink;
+  color:white;
+}
+.hide{
+  display:none;
+}
